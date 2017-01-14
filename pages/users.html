@@ -1,0 +1,41 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 users-list">
+            <p class="lead">Users List</p>
+            <div class="list-group">
+                <a ng-repeat="user in vm.users | limitTo : vm.limit" href="users/{{user.login}}" class="list-group-item text-center" ng-class='vm.getActive(user.login)' >{{user.login}}</a>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-default col-md-6 col-md-push-3" ng-click="vm.loadMore()">Load More ...</button>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+	        <div class="row">
+		    <img class="user-img col-md-4 col-md-push-4" ng-src={{vm.user.avatar_url}} />
+                </div>
+                <div class="row user-label">
+                    <div class="col-md-3">
+			<b>Label:</b>
+		    </div>
+		    <div class="col-md-9">
+			<strong>{{vm.user.name}}</strong>
+            </div>
+		</div>
+
+		<div class="row user-bio" >
+                    <div class="col-md-3">
+			<b>Bio:</b>
+		    </div>
+		    <div class="col-md-9" ng-show="vm.user.bio">
+			{{vm.user.bio}}
+		    </div>
+            <div class="col-md-9" ng-show="!vm.user.bio">
+                <p>This User has no Bio</p>
+            </div>
+		</div>
+        </div>
+    </div>
+</div>

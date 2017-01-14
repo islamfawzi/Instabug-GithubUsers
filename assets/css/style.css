@@ -1,0 +1,91 @@
+.navbar-inverse{
+ background-color: #fff !important;
+}
+
+.logo-img{
+    padding-top: 13px;
+    width: 50px;
+    margin-right: 57px;
+}
+
+.navbar-nav h4{
+    color: #000000;
+}
+.navbar-nav{
+    padding-right: 37px;
+}
+.menu-separator {
+    width: 2px;
+    height: 25px;
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.active{
+    color: #337ab7 !important;
+}
+
+.navbar-fixed-top{
+    border-width: 0 0 2px !important;
+}
+
+.navbar{
+    height: 65px;
+}
+
+.users-list{
+    border-right: 1px solid #000;
+    padding-right: 0px !important;
+    padding-left: 5px !important;
+    height: 420px;
+}
+
+.list-group{
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.users-list p{
+    color: #ccc;
+}
+
+.list-group-item {
+    padding: 8px 15px !important;
+}
+
+.active-item{
+   background-color: #ccc !important;
+   color: #fff !important;
+}
+
+footer{
+    margin: 30px 0 0 0 !important;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+
+.user-img{
+    height: 250px;
+    width: 250px;
+}
+
+.user-label{
+    margin-top: 22px;
+    height: 60px; 
+    border-top: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+    line-height: 60px;
+}
+
+.user-label strong{
+    font-size: 15px;
+}
+
+.user-bio{
+    padding-top: 10px;
+}
+

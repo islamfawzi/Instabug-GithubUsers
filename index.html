@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <base href="/Instabug-GithubUsers/">
+    <!-- Angular libs -->
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angular-route.min.js"></script>
+
+    <!-- javascript -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.routes.js"></script>
+    <script src="assets/js/services/usersService.js"></script>
+    <script src="assets/js/controllers/usersCtrl.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/shop-homepage.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="assets/libs/jquery-1.9.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/libs/bootstrap.js"></script>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="row">
+                <div class="col-md-2">
+                    <img class="logo-img" src="assets/images/logo.png">
+                </div>
+                <div class="col-md-10">
+                <h2>Github Users</h2>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a href="home">
+                        <h4 ng-class="getActiveMenu('home')">Home</h4>
+                    </a>
+                </li>
+                <li class="menu-separator"></li>
+                <li>
+                    <a href="users">
+                        <h4 ng-class="getActiveMenu('users')">Users</h4>
+                    </a>
+                </li>
+                <li class="menu-separator"></li>
+                <li>
+                    <a href="about">
+                        <h4 ng-class="getActiveMenu('about')">About</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+
+</body>
+</html>
+</body>
+</html>
